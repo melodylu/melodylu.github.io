@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="d3/d3.min.js"></script>
+	<script type="text/javascript" src="drawing.js"></script>
+<style>
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override height later */
+    background-color: teal;
+    margin-right: 2px;
+}
+
+svg .pumpkin{
+	fill: yellow;
+	stroke: orange;
+	stroke-width: 4;
+}
+}</style>
+</head>
+<body>
+	<svg width="600" height="400">
+		<circle cx="60" cy="60" r="50" class="pumpkin"/>
+		<circle cx="400" cy="400" r="350" stroke="red" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+		<circle cx="415" cy="400" r="350" stroke="orange" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+		<circle cx="430" cy="400" r="350" stroke="yellow" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+		<circle cx="445" cy="400" r="350" stroke="green" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+		<circle cx="460" cy="400" r="350" stroke="blue" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+		<circle cx="475" cy="400" r="350" stroke="purple" stroke-width="20" opacity=".5" fill="rgba(0,0,0,0)"/>
+
+		<line x1 ="0" y1="400" x2="600" y2="400" stroke="black"/>
+		<text x="140" y="30" font-family="sans-serif" fill="gray">Heeeey Dan</text>
+
+<rect x="0" y="350" width="600" height="50" fill="rgba(192, 219, 161, .75)"/>
+<rect x="0" y="360" width="600" height="50" fill="rgba(192, 219, 161, .75)"/>
+<rect x="0" y="370" width="600" height="50" fill="rgba(192, 219, 161, .75)"/>
+</svg>
+<p>Food calories, scaled</p>
+<div class="chart"></div>
+</body>
+</html>

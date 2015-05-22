@@ -15,7 +15,7 @@
 			var w = 500;
 			var h = 100;
 			var barPadding = 1;
-			
+			var dataset = [];
 			d3.csv("food.csv", function(error, data) {
         		if (error) {  //If error is not null, something went wrong.
           		console.log(error);  //Log the error. 

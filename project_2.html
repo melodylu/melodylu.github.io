@@ -8,23 +8,25 @@
 			/* No style rules here yet */		
 		</style>
 	</head>
-	<body>
+	<body><script>			var dataset = [2,3,4,5];
+</script>
 		<script type="text/javascript">
 
 			//Width and height
-			var w = 500;
-			var h = 100;
+			var w = 800;
+			var h = 800;
 			var barPadding = 1;
-			
+
+			console.log("Hi");
 			d3.csv("food.csv", function(error, data) {
         		if (error) {  //If error is not null, something went wrong.
-          		console.log(error);  //Log the error. 
+          		//console.log(error);  //Log the error. 
           		} else {      //If no error, the file loaded correctly. Yay!
-		          console.log(data);   //Log the data.
+		          //console.log(data);   //Log the data.
       			//Include other code to execute after successful file load here
-      			dataset = data;}
+      			//dataset = data;}
   				});
-
+			//console.log("later data" + dataset);
 
 			//Create SVG element
 			var svg = d3.select("body")
@@ -40,12 +42,13 @@
 			   		x: function(d, i) {
 			   		return i * (w / dataset.length)},
 			   		y: function(d) {
-			   		return h - (d * 4)},
+			   		return h - (d["Food Calories"]*.3)},
 			   		width: w / dataset.length - barPadding,
 			   		height: function(d) {
-			   		return d * 4},
-			   		fill: function(d,i){
-			   		return "rgba("+d*10+","+128+","+128+", 1)"}
+			   		return (d["Food Calories"]*.3)},
+			   		"fill": "black"
+			   		//fill: function((d["Food Calories"]),i){
+			   		//return "rgba("+(d["Food Calories"])*10+","+128+","+128+", 1)"}
 
 			   });
 
@@ -60,7 +63,7 @@
 			   	x: function(d, i) {
         			return i * (w / dataset.length)+(w/dataset.length - barPadding)/2;},
 				"y": function(d) {
-        			return h - (d * 4) + 14;},
+        			return h - ((d["Food Calories"]*.3)) + 14;},
         		"font-family": "sans-serif",
         		"font-size": "11px",
         		"fill": "white",

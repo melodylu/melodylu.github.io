@@ -156,14 +156,113 @@ nav a:hover {
 
 
 
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-color: rgba(80, 151, 224, 0.19);
+}
 
 
+.main-container {
+    background-color: #fff;
+}
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container {
+    border-top: 20px solid rgb(80, 151, 224);
+    background: rgba(80, 151, 224, 0);
+}
+
+.main aside {
+    color: black;
+    padding: 0px 5% 10px;
+    border-top: 20px solid rgb(80, 151, 224);
+    background: rgba(80, 151, 224, 0.19);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+aside ul,li, a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px 0px;
+    margin:0;
+}
+
+aside h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+}
+
+.main h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.main h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: rgba(80, 151, 224, 1);
+}
+
+.main {
+    font-family: 'Questrial', sans-serif;
+}
+.title {
+    color: white;
+}
+
+.project-link {
+    padding: 0px;
+    display: inline-block;
+}
+
+article section {
+    padding-bottom: 30px;
+}
+.tech-list {
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    width: 500px;
+}
+
+.tech-list li {
+    background-color: rgb(80, 151, 224);
+    padding: 0px 7px;
+    border-radius: 11px;
+    display: inline-block;
+    font-size: smaller;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .5px;
+    font-family: monospace;
+}
 
 
+.image-thumbnail {
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    float: right;
+    margin-top: 40px;
+}
 
-
-
-
+.image-bio {
+    width: 250px;
+    /*border: 1px solid #aaa;*/
+    border-radius: 15px;
+    /*float: right;*/
+    /*margin-top: 0px;*/
+}
 
 
 
@@ -207,7 +306,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
 
 /* ====================
     WIDE: CSS3 Effects

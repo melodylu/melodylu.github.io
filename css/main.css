@@ -265,12 +265,12 @@ article section {
     /*margin-top: 0px;*/
 }
 
-footer h3 {
-    font-size: smaller;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    position: relative;
-    right: 300px;
+footer h4 {
+    /*font-size: smaller;*/
+    color: rgba(0,0,0,.3);
+    font-family: 'Questrial', sans-serif;
+    position: absolute;
+    right: 20px;
 }
 
 

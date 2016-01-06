@@ -192,6 +192,19 @@ aside ul,li, a {
     margin:0;
 }
 
+.main a,
+.main  a:hover,
+.main a:visited {
+    color: rgba(80, 151, 224, 1)
+}
+
+.main a:hover {
+    background-color: rgba(80, 151, 224, .1);
+    padding: 10px 0px;
+    border-radius: 11px;
+    /*color: white;*/
+}
+
 aside h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -226,6 +239,12 @@ aside h1 {
 article section {
     padding-bottom: 30px;
 }
+.section-description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(80, 151, 224, .5);
+}
 .tech-list {
     display: block;
     text-decoration: none;
@@ -259,12 +278,16 @@ article section {
 
 .image-bio {
     width: 250px;
-    /*border: 1px solid #aaa;*/
     border-radius: 15px;
-    /*float: right;*/
-    /*margin-top: 0px;*/
+    position: relative;
+    margin: auto;
+    display: block;
 }
 
+.aside-full-width {
+    width: 100%;
+    position: relative;
+}
 footer h4 {
     /*font-size: smaller;*/
     color: rgba(0,0,0,.3);

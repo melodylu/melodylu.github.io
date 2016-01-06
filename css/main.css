@@ -259,12 +259,16 @@ article section {
 
 .image-bio {
     width: 250px;
-    /*border: 1px solid #aaa;*/
     border-radius: 15px;
-    /*float: right;*/
-    /*margin-top: 0px;*/
+    position: relative;
+    margin: auto;
+    display: block;
 }
 
+.aside-full-width {
+    width: 100%;
+    position: relative;
+}
 footer h4 {
     /*font-size: smaller;*/
     color: rgba(0,0,0,.3);

@@ -268,10 +268,32 @@ article section {
     display: inline-block;
     font-size: smaller;
     color: white;
-    font-family: 'Oswald', sans-serif;
     letter-spacing: .5px;
     font-family: monospace;
 }
+
+a.repo-link, a.repo-link:visited {
+    background-color: rgb(222, 235, 249);
+    padding: 3px 7px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: inline-block;
+    color: rgb(80, 151, 224);
+    letter-spacing: .5px;
+    font-family: monospace;
+}
+
+a.repo-link:hover {
+    background-color: rgba(80, 151, 224, .5);
+    padding: 3px 7px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: inline-block;
+    color: rgb(80, 151, 224);
+    letter-spacing: .5px;
+    font-family: monospace;
+}
+
 
 
 .image-thumbnail {

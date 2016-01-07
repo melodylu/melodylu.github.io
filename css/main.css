@@ -236,6 +236,12 @@ aside h1 {
     display: inline-block;
 }
 
+.note {
+    color: rgba(80, 151, 224, 0.6);
+    font-style: italic;
+    padding-top: 0px;
+}
+
 article section {
     padding-bottom: 30px;
 }

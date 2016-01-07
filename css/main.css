@@ -244,6 +244,7 @@ aside h1 {
 
 article section {
     padding-bottom: 30px;
+    clear: right;
 }
 .section-description {
     font-family: 'Raleway', sans-serif;
@@ -257,7 +258,7 @@ article section {
     list-style-type: none;
     padding:0;
     margin:0;
-    width: 500px;
+    /*width: 500px;*/
 }
 
 .tech-list li {
@@ -279,7 +280,7 @@ article section {
     border-radius: 15px;
     float: right;
     margin-top: 40px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
 }
 
 .image-bio {
@@ -329,7 +330,9 @@ footer h4 {
     nav li:last-child a {
         margin-right: 0;
     }
-
+    .tech-list {
+        width: 500px;
+    }
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
